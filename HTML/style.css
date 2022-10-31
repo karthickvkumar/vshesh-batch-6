@@ -1,3 +1,17 @@
 h1{
-  color: rgb(64, 0, 239);
+  color: rgb(123, 0, 194);
+  /* background-color: black; */
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 0, 0);
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
+p{
+  text-transform: capitalize;
+  text-indent: 100px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  word-spacing: 25px;
 }
