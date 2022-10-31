@@ -1,4 +1,5 @@
-h1{
+/* Name Selector */
+h1{ 
   color: rgb(123, 0, 194);
   /* background-color: black; */
   text-align: center;
@@ -14,4 +15,11 @@ p{
   letter-spacing: 5px;
   line-height: 1.5;
   word-spacing: 25px;
+}
+
+/* Class Selector */
+
+.heading{
+  color: chartreuse;
+  text-decoration-line: underline;
 }
