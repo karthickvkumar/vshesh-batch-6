@@ -1,0 +1,11 @@
+.box{
+  width: 500px;
+  height: 150px;
+  background-color: blue;
+}
+
+.big-box{
+  width: 50vw;
+  height: 25vh;
+  background-color: brown;
+}
