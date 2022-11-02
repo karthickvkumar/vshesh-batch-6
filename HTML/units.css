@@ -7,5 +7,11 @@
 .big-box{
   width: 50vw;
   height: 25vh;
-  background-color: brown;
+  background-color: #00bcd4;
+}
+
+.percentage{
+  width: 50%;
+  height: 50%;
+  background-color: black;
 }
