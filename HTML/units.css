@@ -15,3 +15,10 @@
   height: 50%;
   background-color: black;
 }
+
+.paragraph{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: serif;
+}
