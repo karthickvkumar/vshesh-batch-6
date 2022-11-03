@@ -17,8 +17,25 @@
 }
 
 .paragraph{
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 800;
-  font-family: serif;
+  font-size: 44px;
+  /* font-style: italic; */
+  /* font-weight: 800; */
+  font-family: 'Kolker Brush', cursive;
+  /* border-style: solid; */
+  border-width: 2px;
+  /* border-color: #f44336; */
+  border-top-style: double;
+  border-left-style: dashed;
+  border-bottom-style: dotted;
+  border-right-style: solid;
+  border-top-color: blueviolet;
+  border-right-color: black;
+  border-left-color: red;
+  border-bottom-color: orchid;
+}
+
+.heading{
+  /* border-style: solid; */
+  border: 3px solid red;
+  border-radius: 30px;
 }
