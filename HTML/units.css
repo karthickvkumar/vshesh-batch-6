@@ -32,10 +32,20 @@
   border-right-color: black;
   border-left-color: red;
   border-bottom-color: orchid;
+  padding: 125px;
+  margin: 125px;
 }
 
 .heading{
   /* border-style: solid; */
   border: 3px solid red;
   border-radius: 30px;
+  margin-left: 280px;
+  margin-right: 165px;
+}
+
+.small-box{
+  width: 500px;
+  height: 150px;
+  border: 3px solid red;
 }
