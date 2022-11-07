@@ -3,10 +3,16 @@
   border: 3px solid red;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .item{
   width: 150px;
   height: 150px;
   border: 3px solid blue;
+}
+
+.align{
+  align-self: flex-end;
 }
