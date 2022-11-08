@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: url("https://5.imimg.com/data5/LX/PM/GLADMIN-68162457/kawasaki-ninja-h2-bike-500x500.png");
 }
 
 .item{
@@ -15,4 +16,10 @@
 
 .align{
   align-self: flex-end;
+}
+
+.main{
+  /* background-color: aqua; */
+  background-image: url("https://5.imimg.com/data5/LX/PM/GLADMIN-68162457/kawasaki-ninja-h2-bike-500x500.png");
+  background-repeat: no-repeat;
 }
