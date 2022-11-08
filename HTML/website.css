@@ -39,3 +39,38 @@
   border: 2px solid blue;
   box-sizing: border-box;
 }
+
+.heading-title{
+  height: 45%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-desc{
+  height: 55%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.heading-thumbnail{
+  height: 100%;
+  width: 15%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.heading-text{
+  height: 100%;
+  width: 75%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.heading-date{
+  height: 100%;
+  width: 10%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
