@@ -16,3 +16,7 @@
 
 var username = "Karthick Kumar";
 var user_age = 28;
+var result = true;
+
+console.log(username);
+console.log(user_age);
