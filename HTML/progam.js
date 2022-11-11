@@ -78,3 +78,19 @@ object_variable_name.newKey = newValue;
 */
 student_information.contact_number = 98755465256;
 student_information.blood_group = "A +ve";
+
+/*
+To Edit/Update a value from Object
+syntax
+object_variable_name.key = newValue;
+*/
+
+student_information.last_name = "kumar";
+student_information.email_id = "k@gmail.com";
+
+/*
+To Detelte value from Object 
+syntax 
+delete object_variable_name.key;
+*/
+delete student_information.blood_group;
