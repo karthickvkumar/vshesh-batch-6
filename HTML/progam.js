@@ -94,3 +94,21 @@ syntax
 delete object_variable_name.key;
 */
 delete student_information.blood_group;
+
+// Array - It is list of similar data type
+// syntax 
+// var variable_name = [value1, value2, ... , valueN];
+// Value - Number, String, Boolean, null, undefined, Object, Array, Function 
+
+var list_of_numbers = [1, 2, -20, 2.5, 48, 89, 75, 67, 78];
+
+var list_of_names = ["mr.abc", "mr.cde", "mr.see", "mr.pous"];
+
+var list_student_information = [
+  {name : "mr.abc", roll_number : 478569856, email: "abc@gmail.com" },
+  {name : "mr.cde", roll_number : 7844946465, email: "cde@gmail.com"},
+  {name : "mr.zyx", roll_number : 5852655555, email: "zyx@gmail.com"}
+];
+
+console.log(list_of_names);
+console.log(list_student_information);
