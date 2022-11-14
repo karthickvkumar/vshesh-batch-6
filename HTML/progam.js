@@ -112,3 +112,29 @@ var list_student_information = [
 
 console.log(list_of_names);
 console.log(list_student_information);
+/*
+Operations in Array 
+1. Read a value from Array
+2  Insert a new value to the Array
+3. Edit/Update a value from Array
+4. Detelte value from Array 
+
+To Read a value from Array
+syntax 
+array_variable_name[index];
+*/
+console.log(list_student_information[2].email);
+
+/*
+To Insert a new value to the Array
+syntax - approach 1 - It will insert value at end of the array list
+array_variable_name.push(value);
+*/
+list_student_information.push({name: "karthick", email: "k@gmail.com", roll_number: 689555});
+
+/*
+syntax - approach 2 - It will insert value at top of the array list 
+array_variable_name.unshift(value);
+*/
+
+list_student_information.unshift({name: "zyan", email: "z@gmail.com", roll_number: 984554565});
