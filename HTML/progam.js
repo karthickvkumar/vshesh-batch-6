@@ -117,7 +117,7 @@ Operations in Array
 1. Read a value from Array
 2  Insert a new value to the Array
 3. Edit/Update a value from Array
-4. Detelte value from Array 
+4. Delete value from Array 
 
 To Read a value from Array
 syntax 
@@ -138,3 +138,19 @@ array_variable_name.unshift(value);
 */
 
 list_student_information.unshift({name: "zyan", email: "z@gmail.com", roll_number: 984554565});
+
+/*
+To Edit/Update a value from Array
+syntax
+array_variable_name[index] = newValue;
+*/
+list_student_information[3] = {name: "new user", email: "user@gmail.com", roll_number: 1012122};
+
+list_student_information[2].name = "Updated name";
+
+/*
+To Delete value from Array 
+syntax 
+array_variable_name.splice(index, 1);
+*/
+list_student_information.splice(3, 1);
