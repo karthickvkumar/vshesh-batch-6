@@ -181,4 +181,48 @@ Operators
 2. Assignemnt Operator =
 3. Comparision Operator <, <=, >, >=, ==, !=, ===, !==
 4. Logical Operator && (AND), || (OR), ! (NOT)
+
+&& AND 
+true && true - true
+true && false - false
+false && true - false 
+false && false - false 
+
+|| OR 
+true || true - true 
+true || false - true 
+false || true - true 
+false || false - false 
+
+! NOT 
+!true - false 
+!false - true 
 */
+/*
+If Else Condition 
+syntax 
+if(condition){
+  code logic for condition is correct  
+}
+else{
+  code logic for condition is wrong
+}
+*/
+
+/*
+Problem : To check whether a person can Vote or Not ?
+Problem Statement:
+1. To provide age(Number) as Input to program 
+2. If the person age is greater then or equal to 18 -> The person is eligible for Vote 
+3. If the person age is less then 18 -> The person is not eligible for Vote
+*/
+
+function checkVoteEligible(){
+  var age = prompt("Please enter your age");
+  if(age >= 18){
+    alert("The person is eligible for Vote");
+  }
+  else{
+    alert("The person is NOT eligible for Vote")
+  }
+}
