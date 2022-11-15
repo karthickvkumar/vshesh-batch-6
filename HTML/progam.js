@@ -154,3 +154,31 @@ syntax
 array_variable_name.splice(index, 1);
 */
 list_student_information.splice(3, 1);
+
+/*
+Function - It is used to write a block of code 
+syntax 
+function function_name(){
+  code logic
+}
+
+function_name - similar to variable name, it should be a meaninful name, it should contians only A-Z, a-z, 0-9, $, _ 
+*/
+
+function printWelcomeMessage(){
+  var message = "Hello! Good Morning";
+  alert(message);
+}
+
+function sayGoodbye(){
+  var text = "Thank you All! Bye...";
+  alert(text);
+}
+
+/*
+Operators
+1. Arithmetic Operator +, -, *, /, %, ++, --
+2. Assignemnt Operator =
+3. Comparision Operator <, <=, >, >=, ==, !=, ===, !==
+4. Logical Operator && (AND), || (OR), ! (NOT)
+*/
