@@ -288,3 +288,31 @@ function findEvenNumbers(){
     }
   }
 }
+
+/*
+While loop - Entry Level Check
+syntax 
+while(condition){
+  code logic that we need repeat
+}
+*/
+
+var count = 1;
+while(count <= 15){
+  console.log("Loop is running on time", count);
+  count++;
+}
+
+/*
+Do While - Exit Level Check
+syntax 
+do{
+  code logic that we need repeat
+}
+while(condition)
+*/
+var count = 6;
+do{
+    console.log("The count is", count);
+    count++;
+}while(count <= 5);
