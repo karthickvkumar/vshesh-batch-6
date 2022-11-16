@@ -226,3 +226,65 @@ function checkVoteEligible(){
     alert("The person is NOT eligible for Vote")
   }
 }
+
+/*
+Multiple IF Else Condition 
+syntax 
+if(Condition){
+
+}
+else if(Condition){
+  
+}
+else{
+
+}
+*/
+
+/*
+Problem: 
+To find age category
+If the person is less then 18 - The person is Minor 
+If the person is greater then or equal 18 and less then 60 - The person is Major 
+If the person is greater then or equal to 60 - The person is senior 
+*/
+
+function findAgeCategory(){
+  var age = prompt("Enter your age");
+  if(age < 18){
+    alert("The person is Minor ");
+  }
+  else if(age >= 18 && age < 60){
+    alert("The person is Major.");
+  }
+  else{
+    alert("The person is Senior");
+  }
+}
+
+/*
+for Loop
+syntax 
+for(intialization; condition; increment/decrement){
+  code logic that we need repeat 
+}
+*/
+
+for(var startCount = 1; startCount <= 10; startCount++){
+  console.log("Loop is running on time", startCount);
+}
+
+/*
+Problem: To find even number list for a given N number
+To find the logic for finiding even number 
+Logic has to run for mulitipe times 
+*/
+
+function findEvenNumbers(){
+  var Nth = prompt("Enter the last number");
+  for(var startCount = 0; startCount <= Nth; startCount++){
+    if(startCount % 2 === 0){
+      console.log(startCount, "is a Even Number")
+    }
+  }
+}
