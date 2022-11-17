@@ -316,3 +316,50 @@ do{
     console.log("The count is", count);
     count++;
 }while(count <= 5);
+
+/*
+switch case 
+syntax 
+switch(expression){
+  case value:
+    code block
+    break;
+  case value:
+    code block
+    break;
+
+  default:
+}
+
+expression - Directly pass some value or data
+*/
+
+function findWeekday(){
+  var day = prompt("Please enter a number 0 - 6");
+  var numberConvertedDay = parseInt(day);
+  switch(numberConvertedDay){
+    case 0:
+      alert("It's Sunday");
+      break;
+    case 1:
+      alert("It's Monday");
+      break;
+    case 2:
+      alert("It's Tuesday");
+      break;
+    case 3:
+      alert("It's Wednesday");
+      break;
+    case 4: 
+      alert("It's Thursday");
+      break;
+    case 5: 
+      alert("It's Friday");
+      break;
+    case 6: 
+      alert("It's Saturday");
+      break;
+    default:
+      alert("Plese re-check your Input");
+  }
+}
