@@ -408,3 +408,12 @@ class Authentiation{
 
 var auth = new Authentiation();
 //auth.loginPage();
+
+class Home extends Authentiation{
+  landingPage(){
+    alert("This is a Landing page");
+  }
+}
+
+var home = new Home();
+//home.registerPage()
