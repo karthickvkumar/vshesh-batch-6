@@ -369,3 +369,42 @@ function findWeekday(){
     alert("Some thing went wrong, pls contact admin of this page");
   }
 }
+
+/*
+Naming Convension 
+1. Pascal Case - KarthickKumar (creating classname, component name)
+2. Camel Case - karthickKumar (creating function name, variable name, method name)
+3. Snake Case - karthick_kumar (creating function name, variable name)
+4. Kebab Case - karthick-kumar (creating CSS - class name and id name) 
+*/
+
+/*
+Class - block of code which will wrappered inside an object 
+synax - Creating a class
+class ClassName{
+  methodName1(){
+
+  }
+
+  methodName2(){
+
+  }
+} 
+
+synax for executing a method in the class 
+var c = new ClassName();
+c.methodName1();
+*/
+
+class Authentiation{
+  loginPage(){
+    alert("This is a Login page");
+  } 
+
+  registerPage(){
+    alert("This is a Register page");
+  }
+}
+
+var auth = new Authentiation();
+//auth.loginPage();
