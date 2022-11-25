@@ -12,17 +12,21 @@ const LoginPage = () => {
     alert("This is working");
   }
 
+  const onHandleInput = (event) => {
+    console.log(event.target.value);
+  }
+
   return(
     <div>
       <h1>{greetings}</h1>
       <h1>The student name is {studentInfo.name}, and he is {studentInfo.age} years old</h1>
       <div className="space">
         <label className="align-label">Enter your Email ID</label>
-        <input type="text" className="align-input" placeholder="Please enter email id" />
+        <input type="text" className="align-input" placeholder="Please enter email id" onChange={onHandleInput} />
       </div>
       <div className="space">
         <label className="align-label">Enter your Password</label>
-        <input type="password" className="align-input" placeholder="Please enter password" />
+        <input type="password" className="align-input" placeholder="Please enter password" onChange={onHandleInput} />
       </div>
       <div className="space">
         <button className="button" onClick={() => onLoginAction()}>Login</button>
