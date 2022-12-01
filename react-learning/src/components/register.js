@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { NavLink } from "react-router-dom";
 
 const RegisterPage = () => {
 
@@ -98,6 +99,7 @@ const RegisterPage = () => {
       <div className="space">
         <button className="button" onClick={() => createNewAccount()}>Create your Account</button>
       </div>
+      <NavLink to="/">Go to Home Page</NavLink>
     </div>
   )
 }
