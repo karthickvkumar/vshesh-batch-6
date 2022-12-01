@@ -7,7 +7,7 @@ const RegisterPage = () => {
     password : "",
     date_of_birth: "",
     gender: "",
-    skills : "",
+    skills : [],
     educational_degree: "",
     address : ""
   });
@@ -18,8 +18,18 @@ const RegisterPage = () => {
   }
 
   const onHandleInput = (event) => {
-    // console.log(event.target.value)
-    setRegisterForm({...registerForm, [event.target.name] : event.target.value });
+    if(event.target.name === "skills"){
+      if(event.target.checked){
+        registerForm.skills.push(event.target.value);
+      }
+      else{
+        let index = registerForm.skills.indexOf(event.target.value);  
+        registerForm.skills.splice(index , 1);
+      }
+    }
+    else{
+      setRegisterForm({...registerForm, [event.target.name] : event.target.value });
+    }
   }
 
   return(
