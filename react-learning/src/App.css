@@ -26,3 +26,32 @@
 .font{
   font-size: 22px;
 }
+
+.wrapper{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header{
+  height: 10%;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  height: 90%;
+  border: 2px solid red;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.sidebar{
+  width: 20%;
+  border: 2px solid red;
+}
+
+.main-content{
+  width: 80%;
+  border: 2px solid red;
+}
