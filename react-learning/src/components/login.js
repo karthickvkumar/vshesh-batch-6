@@ -1,17 +1,32 @@
 import React, {useState} from "react";
+import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const LoginPage = () => {
 
+  const navigate = useNavigate();
+
   const [formValue, setFormValue] = useState({
-    email_id : "",
+    email : "",
     password : ""
   });
 
   const [passwordStatus, setPasswordStatus] = useState(true);
 
   const onLoginAction = () => {
-    alert("This is working");
-    console.log(formValue);
+    // console.log(formValue); 
+    const url = "https://reqres.in/api/login";
+
+    axios.post(url, formValue)
+        .then((response) => {
+          console.log(response);
+          alert("Login Successfull");
+          navigate("/mail/inbox");
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Something went wrong, pls contact admin");
+        })
   }
 
   const onHandleInput = (event) => {
@@ -25,10 +40,10 @@ const LoginPage = () => {
 
   return(
     <div>
-      <h1>Your email id is {formValue.email_id} and password {formValue.password}</h1>
+      <h1>Your email id is {formValue.email} and password {formValue.password}</h1>
       <div className="space">
         <label className="align-label">Enter your Email ID</label>
-        <input type="text" className="align-input" placeholder="Please enter email id" onChange={onHandleInput} name="email_id" />
+        <input type="text" className="align-input" placeholder="Please enter email id" onChange={onHandleInput} name="email" />
       </div>
       <div className="space">
         <label className="align-label">Enter your Password</label>

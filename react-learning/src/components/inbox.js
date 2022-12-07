@@ -48,11 +48,11 @@ const InboxPage = () => {
                 <td className="table-border">{value.last_name}</td>
                 <td className="table-border">{value.email}</td>
                 <td className="table-border">
-                  <img src={value.avatar} className="profile-pic" />
+                  <img src={value.avatar} className="profile-pic" alt="" />
                 </td>
               </tr>
             )
-          })
+          })  
 
           }
           
