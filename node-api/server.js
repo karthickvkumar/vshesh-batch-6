@@ -34,7 +34,7 @@ connection.connect((error) => {
   }
 });
 
-http://localhost:4000/list
+//http://localhost:4000/list
 app.get("/list", (request, response) => {
   var sqlQuery = `SELECT * FROM karthick_kumar`;
 
