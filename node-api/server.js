@@ -46,6 +46,37 @@ app.get("/list", (request, response) => {
       response.status(200).send(result);
     }
   })
+});
+
+//http://localhost:4000/create
+/*
+{
+  "name" : "",
+  "age" : "",
+  "location" : "",
+  "email" : "",
+  "blood_group" : ""
+}
+*/
+app.post("/create", (request, response) => {
+  var name = request.body.name;
+  var age = request.body.age;
+  var _location = request.body.location;
+  var email = request.body.email;
+  var blood_group = request.body.blood_group;
+
+  var sqlQuery = `INSERT INTO karthick_kumar (name, age, location, email, blood_group) VALUES ('${name}', ${age}, '${_location}', '${email}', '${blood_group}')`;
+
+  connection.query(sqlQuery, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        message : "User profile has been created successfully"
+      });
+    }
+  })
 
 })
 
