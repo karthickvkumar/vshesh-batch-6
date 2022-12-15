@@ -77,9 +77,59 @@ app.post("/create", (request, response) => {
       });
     }
   })
+});
 
+//http://localhost:4000/edit/1
+/*
+{
+  "name" : "",
+  "age" : "",
+  "location" : "",
+  "email" : "",
+  "blood_group" : ""
+}
+*/
+app.put("/edit/:id", (request, response) => {
+  var id = request.params.id;
+
+  var name = request.body.name;
+  var age = request.body.age;
+  var _location = request.body.location;
+  var email = request.body.email;
+  var blood_group = request.body.blood_group;
+
+  var sqlQuery = `UPDATE karthick_kumar SET name='${name}', age=${age}, location='${_location}', email='${email}', blood_group='${blood_group}' WHERE id=${id}`;
+
+  connection.query(sqlQuery, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        message : "User profile has been updated successfully"
+      });
+    }
+  })
+
+});
+
+//http://localhost:4000/delete/1
+app.delete("/delete/:id", (request, response) => {
+  var id = request.params.id;
+
+  var sqlQuery = `DELETE FROM karthick_kumar WHERE id=${id}`;
+
+  connection.query(sqlQuery, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        message : "User profile has been deleted successfully"
+      });
+    }
+  })
 })
-
 
 
 var port = process.env.PORT || 4000;
